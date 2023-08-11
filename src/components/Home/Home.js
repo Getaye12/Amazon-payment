@@ -2,8 +2,9 @@ import React from 'react';
 import './Home.css';
 import Product from '../Product/Product';
 export default function Home() {
-
-    return (
+    
+    
+  return (
         <div className="home">
             <div className="home__container">
                 {/* Image Banner */}
@@ -53,6 +54,8 @@ export default function Home() {
                             src="https://images-na.ssl-images-amazon.com/images/G/01/kindle/journeys/NjA0N2YxY2It/NjA0N2YxY2It-NDg0ZTBmMDEt-w1500._CB655440701_.jpg"
                             alt="image6" />
                     </div>
+                    
+                   
                 </div>
                 {/* Product id, title, price, rating, image */}
                 <div className="home__row">
@@ -144,7 +147,102 @@ export default function Home() {
                         image="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg"
                     />
                 </div>
-            </div>
+                <div className="home__row">
+                <Product
+                        id={12329}
+                        title="Shop Pet supplies"
+                        price={50}
+                        rating={4.5}
+                        image="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/September/DashboardCards/Fuji_Dash_Pets_1X._SY304_CB639746743_.jpg"
+                    />
+                    <Product
+                        id={12329}
+                        title="For your Fitness Needs"
+                        price={300}
+                        rating={4.5}
+                        image="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/September/DashboardCards/Fuji_Dash_Fitness_1X._SY304_CB639748186_.jpg"
+                    />
+                    <Product
+                        id={12329}
+                        title="Toys uder"
+                        price={30}
+                        rating={4.5}
+                        image="https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2022/img/Amazon_Exports/XCM_CUTTLE_1469244_2584128_379x304_1X_en_US._SY304_CB609318944_.jpg"
+                    />
+                </div>
+
+                <div className="home__row">
+                <Product
+                        id={12329}
+                        title="Discover fashion trends"
+                        price={60}
+                        rating={4.5}
+                        image="https://images-na.ssl-images-amazon.com/images/G/01/softlines/shopbop/ingress/2023/March/mp_20230219_ff_desktopsinglecategory_desktop_379x304_1._SY304_CB612639047_.jpg"
+                    />
+                    <Product
+                        id={12329}
+                        title="Home & Kitchen Under"
+                        price={30}
+                        rating={4.5}
+                        image="https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2022/img/Amazon_Exports/XCM_CUTTLE_1469391_2584745_379x304_1X_en_US._SY304_CB609304299_.jpg"
+                    />
+                    <Product
+                        id={12329}
+                        title="Spring new arrivals"
+                        price={30}
+                        rating={4.5}
+                        image="https://images-na.ssl-images-amazon.com/images/G/01/softlines/shopbop/ingress/2023/mp_20230210_newarrivals_desktopsinglecategory_desktop_379x304._SY304_CB613668625_.jpg"
+                    />
+                </div>
+                <div className="home__row">
+                <Product
+                        id={12329}
+                        title="Shop Laptops & Tablets"
+                        price={1296}
+                        rating={4.5}
+                        image="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Laptops_379x304_1X_en_US._SY304_CB418608471_.jpg"
+                    />
+                    <Product
+                        id={12329}
+                        title="Shop activity trackers and smartwatches"
+                        price={250}
+                        rating={4.5}
+                        image="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/September/DashboardCards/Fuji_Dash_SmartWatch_1X._SY304_CB639922137_.jpg"
+                    />
+                    <Product
+                        id={12329}
+                        title="Create with strip lights"
+                        price={9000}
+                        rating={4.5}
+                        image="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_StripLighting_379x304_1X_en_US._SY304_CB418597476_.jpg"
+                    />
+                     <Product
+                        id={12329}
+                        title="Kindle E readers"
+                        price={1000}
+                        rating={4.5}
+                        image="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/September/DashboardCards/Fuji_Desktop_Dash_Kindle_1x._SY304_CB639752818_.jpg"
+                    />
+                </div>
+                   
+                <div className="home__row">
+                    {/* Product */}
+                    <Product
+                        id={90829332}
+                        title="Cesar Millan's Short Guide to a  happy Dog"
+                        price={11.36}
+                        rating={4}
+                        image="https://m.media-amazon.com/images/I/51m7qs1HZ0L._AC_SY200_.jpg"
+                    />
+                    <Product
+                        id={90829332}
+                        title="Shrm-Cp/Shrm-Scp Certification All-In-One Exam Guide, Second Edition 2nd Edition"
+                        price={39.99}
+                        rating={4}
+                        image="https://m.media-amazon.com/images/I/61Tuz1siNCL._SX598_BO1,204,203,200_.jpg"
+                    />
+                </div>
+          </div>
         </div>
     )
 }

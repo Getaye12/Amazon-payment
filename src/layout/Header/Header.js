@@ -70,23 +70,23 @@ export default function Header() {
       </div>
 
 
-      {/* ========footer======  */}
+      {/* ========Header nav======  */}
       <div className="header__bottom">
         
         {/* Nav */}
         <div className="header__bottom-nav">
-          <span>
+          <span className="getspan">
             <Link to="/products" className="header__link">
               All
             </Link>
           </span>
-          <span>Customer Service</span>
-          <span>Gift Cards</span>
-          <span>Buy Again</span>
-          <span>Browsing History</span>
-          <span>Coupons</span>
-          <span>Subscribe & Save</span>
-          <span>Find a Gift</span>
+          <span className="getspan">Customer Service</span>
+          <span className="getspan">Gift Cards</span>
+          <span className="getspan">Buy Again</span>
+          <span className="getspan">Browsing History</span>
+          <span className="getspan">Coupons</span>
+          <span className="getspan">Subscribe & Save</span>
+          <span className="getspan">Find a Gift</span>
           </div>
        <div className="header__bottom-app">
           <img

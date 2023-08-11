@@ -1,8 +1,6 @@
 import React from 'react'
 import './Product.css';
 import StarIcon from '@mui/icons-material/Star';
-// import StarHalfIcon from '@mui/icons-material/StarHalf';
-// import StarOutlineIcon from '@mui/icons-material/StarOutline';
 import { useStateValue } from '../../contextAPI/StateProvider';
 
 export default function Product({ id, title, price, rating, image }) {
@@ -19,7 +17,6 @@ export default function Product({ id, title, price, rating, image }) {
                    price: price,
                    rating: rating,
                    image: image
-                //    id, title, price, rating, image
                }
         })
 

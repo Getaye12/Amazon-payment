@@ -1,6 +1,7 @@
 .header {
     display: flex;
     flex-direction: column;
+   
  }
   .header__top {
     height: 60px;
@@ -11,6 +12,9 @@
     position: sticky;
     top: 0;
     z-index: 100;
+    /* position: fixed; */
+    top: 0;
+  width: 100%
   }
   
   .header__left-nav {
@@ -143,7 +147,7 @@
     justify-content: space-evenly;
     flex: 1;
     justify-content: center;
-  }
+   }
   
   .header__bottom-nav > span {
     margin-left: 10px;
@@ -165,5 +169,32 @@
   .header__bottom-app{
 display: block;
   }
+
+/* =============the new css  */
+
+
+
+.header__bottom-nav .getspan {
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.header__bottom-app {
+  margin-left: auto;
+}
+
+.header__bottom-image {
+  width: 35px;
+}
+
+.header__link {
+ 
+  font-weight: bold;
+}
+
+.header__link:hover {
+  text-decoration: underline;
+}
+ 
 
   

@@ -8,12 +8,14 @@ import Home from './components/Home/Home';
 import Cart from './components/Cart/Cart';
 import Login from './components/Login/Login';
 import { useStateValue } from './contextAPI/StateProvider';
-import Order from './components/Order/Order';
 import Orders from './components/Orders/Orders';
-
-
-export default function App() {
+import Payment from './components/Payment/Payment';
+import { loadStripe } from '@stripe/stripe-js';
+import { Elements } from '@stripe/react-stripe-js';
+const promise = loadStripe('pk_test_51NcN2YJWINtnm5MayRLvuuXAZ8opVTLLpPpVrxBu9wLIRWPtcqscNKeqgd5avpsFvbt4uSAykIeLfDS3TdiQby2V00yrcnkUIp');
+export default function App() { 
   const [{ user }, dispatch] = useStateValue();
+ 
  
   useEffect(() => {
 
@@ -55,13 +57,27 @@ export default function App() {
           <Routes>
             <Route path="/orders" element={<Orders/>}></Route>
           </Routes>
+             
+         
+          <Routes>
+            <Route
+               path="/payment"
+               element={
+                 <Elements stripe={promise}>
+                   <Payment />
+                 </Elements>
+               }
+             />
+            </Routes>
+           
+          
             <Routes>
             <Route path="/" element={ <Home /> }> </Route>
             </Routes>
         </div>
-        <Footer />
-       </Router>
-    </div>
+          <Footer />
+          </Router>
+     </div>
   );
 }
 
